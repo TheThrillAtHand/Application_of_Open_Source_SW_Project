@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/홈"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="홈" />
+    <item
+        android:id="@+id/낚시정보"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="낚시정보" />
+    <item
+        android:id="@+id/날씨정보"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="날씨정보" />
+    <item
+        android:id="@+id/예약"
+        android:icon="@android:drawable/presence_video_away"
+        android:title="예약" />
+<!--    <item-->
+<!--        android:id="@+id/SOS"-->
+<!--        android:icon="@android:drawable/stat_sys_phone_call"-->
+<!--        android:title="SOS" />-->
+    <item
+        android:id="@+id/마이메뉴"
+        android:icon="@android:drawable/presence_offline"
+        android:title="마이메뉴" />
+</menu>
