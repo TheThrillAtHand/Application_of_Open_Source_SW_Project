@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "949267918063",
+    "firebase_url": "https://thethrillathand-eb0dc.firebaseio.com",
+    "project_id": "thethrillathand-eb0dc",
+    "storage_bucket": "thethrillathand-eb0dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949267918063:android:b57144272c6b7bd0923f1a",
+        "android_client_info": {
+          "package_name": "com.example.thethrillathand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949267918063-5pef467oup2qd5aesketkrb8gbog6nlu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwpR2eHxtT6z8dbFSV9juctT3YswhG9LA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949267918063-5pef467oup2qd5aesketkrb8gbog6nlu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
