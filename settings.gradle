@@ -1,0 +1,3 @@
+include ':part2_3'
+rootProject.name='TheThrillAtHand'
+include ':app'
