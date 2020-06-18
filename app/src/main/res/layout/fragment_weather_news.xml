@@ -28,13 +28,13 @@
                 <ImageView
                     android:id="@+id/Special_new"
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"
+                    android:layout_height="500dp"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <ImageView
                     android:id="@+id/Special_new2"
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"
+                    android:layout_height="500dp"
                     tools:srcCompat="@tools:sample/avatars" />
             </LinearLayout>
         </ScrollView>

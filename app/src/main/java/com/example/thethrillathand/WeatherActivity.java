@@ -1,3 +1,6 @@
+// 작성자 : 2016039020 정경창
+// 설  명 : 날씨정보에서 지역별 날씨보기에서 기상청에서 RSS서비스를 통해 데이터 제공받는 클래스
+
 package com.example.thethrillathand;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,11 +52,11 @@ public class WeatherActivity extends AppCompatActivity {
     ICWeatherAdapter weatherAdapter;
 
     // 전국의 날씨 정보 저장 주소 배열
-    String [] addressArray = {"http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=1111000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=2800000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=4215000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=3000000000",
+    String [] addressArray = {"http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=1111000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=2800000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=4215000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=4311133000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=3000000000",
             "http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=2700000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=3100000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=2600000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=2900000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=4613000000"};
 
     // Spinner에서 보여질 이름의 배열
-    String [] spinnerArray = {"서울","인천","강릉","대전","대구","울산","부산","광주","여수"};
+    String [] spinnerArray = {"서울","인천","강릉","청주","대전","대구","울산","부산","광주","여수"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

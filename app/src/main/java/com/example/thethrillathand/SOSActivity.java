@@ -1,3 +1,6 @@
+// 작성자 : 2016039020 정경창
+// 설  명 : SOS기능에서 현재위치(GPS, 위도, 경도)정보로 설정한 번호로 메세지와 현재위치를 보내는 클래스
+
 package com.example.thethrillathand;
 
 import android.Manifest;

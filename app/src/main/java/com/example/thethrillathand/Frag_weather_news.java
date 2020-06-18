@@ -1,3 +1,6 @@
+// 작성자 : 2016039020 정경창
+// 설  명 : Windy 홈페이지의 지도와 기상청(해양기상부이)홈페이지의 지도를 띄우는 클래스
+
 package com.example.thethrillathand;
 
 import android.graphics.Bitmap;
