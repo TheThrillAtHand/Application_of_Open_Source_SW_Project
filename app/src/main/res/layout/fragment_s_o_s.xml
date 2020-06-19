@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag_SOS"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/button_sos"
+        android:layout_width="match_parent"
+        android:layout_height="464dp"
+        android:layout_gravity="center"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_report" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/malgun"
+            android:text="해양신고"
+            android:textColor="#212121"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
