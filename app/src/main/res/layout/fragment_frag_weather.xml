@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 2018038019 최승혜
+    설 명 : 메뉴 중 날씨정보에 해당하는 xml-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag_reservation"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        >
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_map"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ff0000"
+            android:fontFamily="@font/bm_hanna"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Windy"
+            android:textColor="#171515"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#464646" />
+
+        <Button
+            android:id="@+id/button_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ff0000"
+            android:fontFamily="@font/bm_hanna"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="지역검색"
+            android:textColor="#171515"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#464646" />
+        <Button
+            android:id="@+id/button_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ff0000"
+            android:fontFamily="@font/bm_hanna"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="기상특보"
+            android:textColor="#171515"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#464646" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_centerInParent="true"
+        android:background="#464646" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/weather_child"
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+</LinearLayout>
+
