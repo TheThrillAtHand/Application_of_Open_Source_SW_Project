@@ -115,14 +115,14 @@
                         />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="* 70,000원"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/malgun"
-                    android:textSize="20dp"
-                    android:paddingLeft="5dp"
-                    />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="* 70,000원"
+                android:textStyle="bold"
+                android:fontFamily="@font/malgun"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

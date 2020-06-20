@@ -26,6 +26,15 @@ public class PoinAcitivity extends AppCompatActivity {
             }
         });
 
+        ImageButton btn_toPoinA2 = (ImageButton) findViewById(R.id.poin_a2);
+        btn_toPoinA2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), PoinA2Activity.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton btn_toPoinB1 = (ImageButton) findViewById(R.id.poin_b1);
         btn_toPoinB1.setOnClickListener(new View.OnClickListener() {
             @Override

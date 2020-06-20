@@ -15,12 +15,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="구미낚시터"
-            android:textSize="40sp"/>
+            android:textSize="40sp"
+            android:gravity="center"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="수상, 보험"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:gravity="center"/>
 
         <ImageView
             android:layout_width="match_parent"
@@ -30,10 +32,41 @@
             android:src="@drawable/gumi" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="이용정보"
+            android:text="\n가격정보"
             android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1인가격 30000원"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n이용정보"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -48,6 +81,12 @@
             android:textSize="13sp" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n사장님한마디"
@@ -58,6 +97,13 @@
             android:layout_height="wrap_content"
             android:text="최신식 좌대시설과 자연지같은 최고의 포인트"
             android:textSize="13sp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,6 +116,12 @@
             android:src="@drawable/fish" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\n업체공지"
@@ -79,6 +131,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\n24시간 운영 / 배 운영시간 : 일출 ~ 일몰\n 식당운영 시간 : 09 ; 00 ~ 18 : 00 (석식 주문 16 : 00 까지)\n 낚시용품 판매 / 낚시대 대여불가 / 의자필수지참" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
 
         <TextView
             android:layout_width="wrap_content"

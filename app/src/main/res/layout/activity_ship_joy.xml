@@ -15,12 +15,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="조이호"
-            android:textSize="40sp"/>
+            android:textSize="40sp"
+            android:gravity="center"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="종일, 보험"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:gravity="center"/>
 
         <ImageView
             android:layout_width="match_parent"
@@ -28,11 +30,36 @@
             android:gravity="center"
             android:orientation="vertical"
             android:src="@drawable/joy" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="\n\n이용정보"
+            android:text="\n가격정보"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="70000원"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이용정보"
             android:textSize="17sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -47,6 +74,12 @@
             android:textSize="13sp" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n사장님한마디"
@@ -56,6 +89,13 @@
             android:layout_height="wrap_content"
             android:text="짜릿한손맛으로 예약하고 적립금 받으세요!"
             android:textSize="13sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,6 +108,12 @@
             android:src="@drawable/joyfish" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\n업체공지"
@@ -77,6 +123,12 @@
             android:layout_height="wrap_content"
             android:text="당일물때와 기상상황에 따라 입출항시간이 유동적일수 있습니다 예약진행후 전화무의 필수입니다.\n무료제공 미끼 : 미꾸라지"
             android:textSize="13sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
 
         <TextView
             android:layout_width="wrap_content"

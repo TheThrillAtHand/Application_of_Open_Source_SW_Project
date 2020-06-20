@@ -15,12 +15,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="신나라 1호"
-            android:textSize="40sp"/>
+            android:textSize="40sp"
+            android:gravity="center"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="종일, 보험"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:gravity="center"/>
 
         <ImageView
             android:layout_width="match_parent"
@@ -32,8 +34,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="\n이용정보"
+            android:text="\n가격정보"
             android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100000원"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이용정보"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -48,6 +74,12 @@
             android:textSize="13sp" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n사장님한마디"
@@ -58,6 +90,13 @@
             android:layout_height="wrap_content"
             android:text="7월 18일 FTV촬용 확정! \nFTV촬영 외수질 출조 예정입니다! \n선착순 마감 예정이오니 빠르게 예약해주세요!~"
             android:textSize="13sp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,15 +109,28 @@
             android:src="@drawable/sinnarafish" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\n업체공지"
             android:textSize="17sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="[참돈타이라바],[광어 다운샷],[농어/우럭/광어 외수질],[중내만권 광어/우럭] 상품 중 먼저 예약된 어종으로 출항합니다."
             android:textSize="13sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
 
         <TextView
             android:layout_width="wrap_content"
