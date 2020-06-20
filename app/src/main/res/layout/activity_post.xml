@@ -5,17 +5,27 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <include
-        layout="@layout/view_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="181dp"
+        android:layout_height="58dp"
+        android:padding="5dp"
+        app:srcCompat="@drawable/icon" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    </FrameLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar">
+        android:layout_below="@+id/imageView7">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,12 +33,12 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <com.example.TheThrillAtHand.view.ReadContentsVIew
+            <com.example.thethrillathand.ReadContentsVIew
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/readContentsView">
 
-            </com.example.TheThrillAtHand.view.ReadContentsVIew>
+            </com.example.thethrillathand.ReadContentsVIew>
         </LinearLayout>
     </ScrollView>
 

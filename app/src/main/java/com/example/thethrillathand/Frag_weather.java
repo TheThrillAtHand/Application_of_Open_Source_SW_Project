@@ -1,3 +1,13 @@
+/*
+    작성자 : 2018038019 최승혜
+    설 명 :  날씨 정보 Frag (UI제작)
+            각 버튼(영역)을 클릭 할 시 버튼이 해당하는 내용의 프래그먼트로 일부 영역의 화면이 전환된다.
+*/
+
+
+
+
+
 package com.example.thethrillathand;
 
 import android.content.Intent;
@@ -5,9 +15,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Button;
 
 import androidx.fragment.app.Fragment;

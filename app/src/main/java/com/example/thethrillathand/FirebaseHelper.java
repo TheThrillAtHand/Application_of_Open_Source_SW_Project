@@ -15,9 +15,9 @@ import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 
-import static com.example.TheThrillAtHand.Util.isStorageUrl;
-import static com.example.TheThrillAtHand.Util.showToast;
-import static com.example.TheThrillAtHand.Util.storageUrlToName;
+import static com.example.thethrillathand.Util.isStorageUrl;
+import static com.example.thethrillathand.Util.showToast;
+import static com.example.thethrillathand.Util.storageUrlToName;
 
 public class FirebaseHelper {
     private Activity activity;

@@ -1,17 +1,16 @@
-package com.example.thethrillathand;
+/*
+    작성자 : 2018038019 최승혜
+    설 명 :  Expandable Listview 에서 사용되는 배열을 정의
+*/
 
-import android.content.Context;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseExpandableListAdapter;
-import android.widget.TextView;
+
+
+
+package com.example.thethrillathand;
 
 import java.util.ArrayList;
 
-/**
- * Created by JSY on 2016-02-04.
- */
+
 public class myGroup {
         public ArrayList<String> child;
         public String groupName;

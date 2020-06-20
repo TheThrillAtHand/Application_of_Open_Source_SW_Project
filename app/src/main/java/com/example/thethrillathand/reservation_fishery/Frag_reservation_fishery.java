@@ -1,4 +1,12 @@
-package com.example.thethrillathand;
+/*
+    작성자 : 2018038019 최승혜
+    설 명 :  예약 화면의 낚시터 Frag (UI제작)
+
+*/
+
+
+
+package com.example.thethrillathand.reservation_fishery;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,11 +14,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.thethrillathand.R;
 
 public class Frag_reservation_fishery extends Fragment {
     @Nullable
@@ -24,7 +33,7 @@ public class Frag_reservation_fishery extends Fragment {
         product1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent product = new Intent(getActivity(), DetailActivity.class);
+                Intent product = new Intent(getActivity(), FisheryDonghaeActivity.class);
                 startActivity(product);
             }
         });
@@ -33,7 +42,7 @@ public class Frag_reservation_fishery extends Fragment {
         product2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent product = new Intent(getActivity(), DetailActivity.class);
+                Intent product = new Intent(getActivity(), FisheryDangjinActivity.class);
                 startActivity(product);
             }
         });
@@ -41,7 +50,7 @@ public class Frag_reservation_fishery extends Fragment {
         product3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent product = new Intent(getActivity(), DetailActivity.class);
+                Intent product = new Intent(getActivity(), FisheryGumiActivity.class);
                 startActivity(product);
             }
         });

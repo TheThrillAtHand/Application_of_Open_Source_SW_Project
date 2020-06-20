@@ -22,14 +22,44 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
+
+
         <activity android:name=".WeatherActivity" />
         <activity android:name=".PoinActivity" />
         <activity android:name=".noticeActivity" />
         <activity android:name=".configurationActivity" />
         <activity android:name=".eventActivity" />
         <activity android:name=".SOSActivity" />
-        <activity android:name=".DetailActivity" />
         <activity android:name=".SearchActivity" />
+
+        <activity android:name=".fishsearch.SpotActivity"/>
+        <activity android:name=".knot.uninote" android:theme="@style/Theme.mDialog"/>
+        <activity android:name=".knot.clinch" android:theme="@style/Theme.mDialog"/>
+        <activity android:name=".knot.outside" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".knot.yarn" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".preparations.bass" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".preparations.hairtail" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".preparations.rockfish" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".preparations.sanddab" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".fishsearch.SearchActivity" />
+        <activity android:name=".reservation_fishery.FisheryDonghaeActivity"/>
+        <activity android:name=".reservation_fishery.FisheryDangjinActivity"/>
+        <activity android:name=".reservation_fishery.FisheryGumiActivity"/>
+
+        <activity android:name=".reservation_rental.PoinAcitivity"/>
+        <activity android:name=".reservation_rental.PoinA1Activity"/>
+        <activity android:name=".reservation_rental.PoinA2Activity"/>
+        <activity android:name=".reservation_rental.PoinB1Activity"/>
+        <activity android:name=".reservation_rental.PoinB2Activity"/>
+        <activity android:name=".reservation_rental.LeCielActivity"/>
+        <activity android:name=".reservation_rental.LeCielGrandActivity"/>
+        <activity android:name=".reservation_rental.LeCielVip1Activity"/>
+        <activity android:name=".reservation_rental.LeCielVip2Activity"/>
+        <activity android:name=".reservation_ship.ShipAnsanActivity"/>
+        <activity android:name=".reservation_ship.ShipJoyActivity"/>
+        <activity android:name=".reservation_ship.ShipSinnaraActivity"/>
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

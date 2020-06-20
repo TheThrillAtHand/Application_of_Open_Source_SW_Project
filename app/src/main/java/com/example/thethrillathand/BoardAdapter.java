@@ -18,12 +18,11 @@ import androidx.appcompat.widget.PopupMenu;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.TheThrillAtHand.view.ReadContentsVIew;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 
 import java.util.ArrayList;
 
-public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MainViewHolder> {
+public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.MainViewHolder> {
     private ArrayList<PostInfo> mDataset;
     private Activity activity;
     private FirebaseHelper firebaseHelper;
@@ -38,7 +37,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MainViewHolder
         }
     }
 
-    public HomeAdapter(Activity activity, ArrayList<PostInfo> myDataset) {
+    public BoardAdapter(Activity activity, ArrayList<PostInfo> myDataset) {
         this.mDataset = myDataset;
         this.activity = activity;
 
@@ -56,7 +55,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MainViewHolder
 
     @NonNull
     @Override
-    public HomeAdapter.MainViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public BoardAdapter.MainViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         CardView cardView = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post, parent, false);
         final MainViewHolder mainViewHolder = new MainViewHolder(cardView);
         cardView.setOnClickListener(new View.OnClickListener() {

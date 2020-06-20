@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 2018038019 최승혜
+    설 명 : 메뉴 중 홈화면에 해당하는 xml-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -20,12 +23,8 @@
         <LinearLayout
             android:id="@+id/home_banner"
             android:layout_width="match_parent"
-            android:layout_height="176dp"
+            android:layout_height="291dp"
             android:orientation="vertical">
-
-
-
-
 
 
         </LinearLayout>
@@ -41,32 +40,25 @@
 
             <TextView
                 android:layout_width="347dp"
-                android:layout_height="match_parent"
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/bm_hanna"
+                android:padding="10dp"
                 android:text="오늘의 추천 Point"
                 android:textColor="#212121"
-                android:textSize="25dp"
-                android:textStyle="bold"/>
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button_search"
                 android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:textSize="10dp"
-                android:text="Search" />
+                android:layout_height="match_parent"
+                android:text="Search"
+                android:textSize="10dp" />
 
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_centerInParent="true"
-            android:background="#464646"
-
-
-            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="166dp"
@@ -90,13 +82,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="성화낚시터" />
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/malgun"
+                    android:text="당진 낚시터" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="충북 청주시 서원구 성화동 43-9"
+                    android:text="충청남도 당진시"
+                    android:fontFamily="@font/malgun"
                     android:textSize="10dp" />
 
 
@@ -120,6 +115,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/malgun"
+                    android:textColor="@color/black"
                     android:text="동해 낚시터" />
 
                 <TextView
@@ -127,6 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="강원도 동해시"
+                    android:fontFamily="@font/malgun"
                     android:textSize="10dp" />
             </LinearLayout>
 
@@ -140,12 +138,36 @@
             android:background="#464646"
             android:paddingBottom="5dp"/>
 
+        <TextView
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/bm_hanna"
+            android:padding="10dp"
+            android:text="낚시 관련 정보"
+            android:textColor="#212121"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerInParent="true"
+            android:background="#464646"
+            android:paddingBottom="5dp"/>
+
+
+
         <LinearLayout
             android:id="@+id/home_list"
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:orientation="vertical" />
-    </LinearLayout>
+            android:orientation="vertical" >
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
 
     </ScrollView>
     </LinearLayout>

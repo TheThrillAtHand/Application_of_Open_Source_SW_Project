@@ -1,3 +1,11 @@
+/*
+    작성자 : 2018038019 최승혜
+    설 명 :  Activity - 마이메뉴의 환경설정
+
+*/
+
+
+
 package com.example.thethrillathand;
 
 import android.os.Bundle;

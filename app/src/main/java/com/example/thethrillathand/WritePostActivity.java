@@ -17,7 +17,7 @@ import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 
 import com.bumptech.glide.Glide;
-import com.example.TheThrillAtHand.view.ContentsItemView;
+import com.example.thethrillathand.ContentsItemView;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -36,15 +36,15 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static com.example.TheThrillAtHand.Util.GALLERY_IMAGE;
-import static com.example.TheThrillAtHand.Util.GALLERY_VIDEO;
-import static com.example.TheThrillAtHand.Util.INTENT_MEDIA;
-import static com.example.TheThrillAtHand.Util.INTENT_PATH;
-import static com.example.TheThrillAtHand.Util.isImageFile;
-import static com.example.TheThrillAtHand.Util.isStorageUrl;
-import static com.example.TheThrillAtHand.Util.isVideoFile;
-import static com.example.TheThrillAtHand.Util.showToast;
-import static com.example.TheThrillAtHand.Util.storageUrlToName;
+import static com.example.thethrillathand.Util.GALLERY_IMAGE;
+import static com.example.thethrillathand.Util.GALLERY_VIDEO;
+import static com.example.thethrillathand.Util.INTENT_MEDIA;
+import static com.example.thethrillathand.Util.INTENT_PATH;
+import static com.example.thethrillathand.Util.isImageFile;
+import static com.example.thethrillathand.Util.isStorageUrl;
+import static com.example.thethrillathand.Util.isVideoFile;
+import static com.example.thethrillathand.Util.showToast;
+import static com.example.thethrillathand.Util.storageUrlToName;
 
 public class WritePostActivity extends BasicActivity {
     private static final String TAG = "WritePostActivity";

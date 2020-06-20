@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import static com.example.TheThrillAtHand.Util.showToast;
+import static com.example.thethrillathand.Util.showToast;
 
 public class LoginActivity extends BasicActivity {
     private FirebaseAuth mAuth;

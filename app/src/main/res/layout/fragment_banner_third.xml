@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 2018038019 최승혜
+    설 명 : 슬라이드 배너의 세번째 이미지 xml-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,5 +13,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        app:srcCompat="@drawable/thethrillathand" />
+        app:srcCompat="@drawable/banner3" />
 </LinearLayout>

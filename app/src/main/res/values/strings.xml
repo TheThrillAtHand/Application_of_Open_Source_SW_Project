@@ -18,7 +18,7 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
-    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="request_permission">카메라 권한이 필요합니다.</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
 
     <string name="please_grant_permission">권한을 허용해 주세요.</string>

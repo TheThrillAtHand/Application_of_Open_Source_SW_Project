@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
-import com.example.TheThrillAtHand.view.ReadContentsVIew;
+import com.example.thethrillathand.ReadContentsVIew;
 
 public class PostActivity extends BasicActivity {
     private PostInfo postInfo;

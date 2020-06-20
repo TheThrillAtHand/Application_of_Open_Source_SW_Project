@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+
+
+
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="MainActivity">
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="181dp"
         android:layout_height="58dp"
+        android:padding="5dp"
         app:srcCompat="@drawable/icon" />
 
     <FrameLayout
@@ -17,157 +24,20 @@
         >
 
     </FrameLayout>
+
     <FrameLayout
-
-        android:id="@+id/main"
-        android:layout_width="match_parent"
-        android:layout_height="546dp"
-        android:orientation="vertical"
-
-        />
-
-
-    <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        >
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_below="@+id/imageView7" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:id="@+id/홈"
-            android:onClick="homeclick"
-            >
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomNavigationView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="?android:attr/windowBackground"
+    app:menu="@menu/bottom_navigation" />
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                app:srcCompat="@drawable/home_white" />
-
-            <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="홈"
-            android:gravity="center"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:id="@+id/날씨정보"
-            android:onClick="weatherclick"
-            >
-
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                app:srcCompat="@drawable/sun_white" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="날씨정보"
-                android:gravity="center"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:id="@+id/게시판"
-            android:onClick="boardclick"
-            >
-
-            <ImageView
-
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                app:srcCompat="@drawable/board_white" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="게시판"
-                android:gravity="center"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:id="@+id/예약"
-            android:onClick="reservationclick"
-            >
-
-            <ImageView
-
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                app:srcCompat="@drawable/cart_white" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="예약"
-                android:gravity="center"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:id="@+id/SOS"
-            android:onClick="sosclick"
-            >
-
-            <ImageView
-
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/sos_white" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="SOS"
-                android:gravity="center"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:id="@+id/마이메뉴"
-            android:onClick="mymenuclick"
-            >
-
-            <ImageView
-
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                app:srcCompat="@drawable/account_white" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="마이메뉴"
-                android:gravity="center"/>
-
-        </LinearLayout>
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

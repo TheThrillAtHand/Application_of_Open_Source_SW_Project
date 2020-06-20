@@ -1,13 +1,24 @@
+/*
+    작성자 : 2018038019 최승혜
+    설 명 :  예약 화면의 메인 Frag (UI제작)
+            각 버튼(영역)을 클릭 할 시 버튼이 해당하는 내용의 프래그먼트로 일부 영역의 화면이 전환된다.
+
+*/
+
+
 package com.example.thethrillathand;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.thethrillathand.reservation_fishery.Frag_reservation_fishery;
+import com.example.thethrillathand.reservation_rental.Frag_reservation_rental;
+import com.example.thethrillathand.reservation_ship.Frag_reservation_ship;
 
 
 /**

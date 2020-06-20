@@ -27,15 +27,15 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class HomeFragment extends Fragment {
-    private static final String TAG = "HomeFragment";
+public class BoardFragment extends Fragment {
+    private static final String TAG = "BoardFragment";
     private FirebaseFirestore firebaseFirestore;
-    private HomeAdapter homeAdapter;
+    private BoardAdapter boardAdapter;
     private ArrayList<PostInfo> postList;
     private boolean updating;
     private boolean topScrolled;
 
-    public HomeFragment() {
+    public BoardFragment() {
         // Required empty public constructor
     }
 
@@ -52,15 +52,15 @@ public class HomeFragment extends Fragment {
 
         firebaseFirestore = FirebaseFirestore.getInstance();
         postList = new ArrayList<>();
-        homeAdapter = new HomeAdapter(getActivity(), postList);
-        homeAdapter.setOnPostListener(onPostListener);
+        boardAdapter = new BoardAdapter(getActivity(), postList);
+        boardAdapter.setOnPostListener(onPostListener);
 
         final RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         view.findViewById(R.id.floatingActionButton).setOnClickListener(onClickListener);
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(homeAdapter);
+        recyclerView.setAdapter(boardAdapter);
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
@@ -116,7 +116,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onPause(){
         super.onPause();
-        homeAdapter.playerStop();
+        boardAdapter.playerStop();
     }
 
     View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -134,7 +134,7 @@ public class HomeFragment extends Fragment {
         @Override
         public void onDelete(PostInfo postInfo) {
             postList.remove(postInfo);
-            homeAdapter.notifyDataSetChanged();
+            boardAdapter.notifyDataSetChanged();
 
             Log.e("로그: ","삭제 성공");
         }
@@ -167,7 +167,7 @@ public class HomeFragment extends Fragment {
                                         new Date(document.getDate("createdAt").getTime()),
                                         document.getId()));
                             }
-                            homeAdapter.notifyDataSetChanged();
+                            boardAdapter.notifyDataSetChanged();
                         } else {
                             Log.d(TAG, "Error getting documents: ", task.getException());
                         }

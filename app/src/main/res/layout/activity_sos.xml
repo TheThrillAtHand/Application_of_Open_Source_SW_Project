@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 2018038019 최승혜
+    설 명 :  SOS xml-->
+
+
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,12 +12,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="248dp" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,13 +27,13 @@
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
-                android:layout_height="101dp"
+                android:layout_height="85dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
-                android:fontFamily="@font/malgun"
+                android:fontFamily="@font/bm_hanna"
                 android:text="관할 담당 센터로 연결합니다."
                 android:textColor="@color/black"
-                android:textSize="26dp"
+                android:textSize="28dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -64,19 +69,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Yes"
-                android:onClick="onYesClicked" />
+                android:onClick="onYesClicked"
+                android:text="Yes" />
 
             <Button
                 android:id="@+id/sos_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="No"
-                android:onClick="onNoClicked"/>
+                android:onClick="onNoClicked"
+                android:text="No" />
         </LinearLayout>
-
-
 
 
     </LinearLayout>

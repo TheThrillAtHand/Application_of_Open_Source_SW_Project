@@ -1,3 +1,12 @@
+/*
+    작성자 : 2018038019 최승혜
+    설 명 :  Expandable Listview를 위한 커스텀 어뎁터
+
+*/
+
+
+
+
 package com.example.thethrillathand;
 
 import android.content.Context;
@@ -9,9 +18,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by JSY on 2016-02-04.
- */
+
 public class ExpandAdapter extends BaseExpandableListAdapter {
     private Context context;
     private int groupLayout = 0;
@@ -29,7 +36,7 @@ public class ExpandAdapter extends BaseExpandableListAdapter {
 
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
-        // TODO Auto-generated method stub
+
         if(convertView == null){
             convertView = myinf.inflate(this.groupLayout, parent, false);
         }
@@ -40,7 +47,7 @@ public class ExpandAdapter extends BaseExpandableListAdapter {
 
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        // TODO Auto-generated method stub
+
         if(convertView == null){
             convertView = myinf.inflate(this.chlidLayout, parent, false);
         }
@@ -50,48 +57,48 @@ public class ExpandAdapter extends BaseExpandableListAdapter {
     }
     @Override
     public boolean hasStableIds() {
-        // TODO Auto-generated method stub
+
         return true;
     }
 
     @Override
     public boolean isChildSelectable(int groupPosition, int childPosition) {
-        // TODO Auto-generated method stub
+
         return true;
     }
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        // TODO Auto-generated method stub
+
         return DataList.get(groupPosition).child.get(childPosition);
     }
 
     @Override
     public long getChildId(int groupPosition, int childPosition) {
-        // TODO Auto-generated method stub
+
         return childPosition;
     }
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        // TODO Auto-generated method stub
+
         return DataList.get(groupPosition).child.size();
     }
 
     @Override
     public myGroup getGroup(int groupPosition) {
-        // TODO Auto-generated method stub
+
         return DataList.get(groupPosition);
     }
 
     @Override
     public int getGroupCount() {
-        // TODO Auto-generated method stub
+
         return DataList.size();
     }
 
     @Override
     public long getGroupId(int groupPosition) {
-        // TODO Auto-generated method stub
+
         return groupPosition;
     }
 

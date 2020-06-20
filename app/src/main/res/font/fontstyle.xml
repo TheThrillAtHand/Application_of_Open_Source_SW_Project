@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 2018038019 최승혜
+    설 명 : 앱에 사용된 폰트-->
+
 <font-family xmlns:android="http://schemas.android.com/apk/res/android">
 
 <font
@@ -6,5 +9,11 @@
     android:fontWeight="400"
     android:font="@font/malgun"
     />
+    <font
+        android:fontStyle = "normal"
+        android:fontWeight="400"
+        android:font="@font/bm_hanna"
+
+        />
 
 </font-family>

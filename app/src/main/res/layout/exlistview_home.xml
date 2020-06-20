@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 2018038019 최승혜
+    설 명 :  expandable listview xml-->
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -7,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/exListView_home"
-        android:groupIndicator="@null"
+        android:groupIndicator="@android:color/holo_blue_dark"
 
         />
 </LinearLayout>

@@ -1,3 +1,9 @@
+/*
+    작성자 : 2018038019 최승혜
+    설 명 :  홈 화면의 슬라이드 배너의 두번째 사진에 해당하는 Frag
+
+*/
+
 package com.example.thethrillathand;
 
 import android.os.Bundle;

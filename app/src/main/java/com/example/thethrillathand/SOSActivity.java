@@ -1,3 +1,4 @@
+
 package com.example.thethrillathand;
 
 import android.Manifest;
@@ -12,7 +13,6 @@ import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -62,10 +62,11 @@ public class SOSActivity extends AppCompatActivity {
                 double longitude = gpsTracker.getLongitude();
 
                 String address = getCurrentAddress(latitude, longitude);
-//                textview_address.setText(address);
+                String latitude_2 = String.format("%.2f ", latitude);
+                String longitude_2 = String.format("%.2f ", longitude);
 
-                sendSMS("01087508661","긴급구조요청\n\n주소 : "+ address + "\n위도 " + latitude + "\n경도 " + longitude);
-
+                SmsManager sms = SmsManager.getDefault();
+                sms.sendTextMessage("01087508661", null, "긴급구조요청\n주소 "+ address + "위도 " + latitude_2 + "\n경도 "+ longitude_2, null, null);
                 Toast.makeText(SOSActivity.this, "신고 접수 완료", Toast.LENGTH_LONG).show();
                 finish();
 

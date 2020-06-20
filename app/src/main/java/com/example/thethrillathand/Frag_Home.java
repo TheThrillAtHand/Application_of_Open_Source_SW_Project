@@ -1,16 +1,26 @@
+/*
+    작성자 : 2018038019 최승혜
+    설 명 :  홈 화면 Frag (UI제작)
+            Search 버튼 클릭 시 어종 검색 Activity로 이동
+            추천 point의 이미지 클릭 시 해당 포인트의 예약 상세 페이지로 이동
+*/
+
+
 package com.example.thethrillathand;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.thethrillathand.fishsearch.SearchActivity;
+import com.example.thethrillathand.reservation_fishery.FisheryDangjinActivity;
+import com.example.thethrillathand.reservation_fishery.FisheryDonghaeActivity;
 
 
 /**
@@ -74,14 +84,14 @@ public class Frag_Home extends Fragment {
         point1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent point = new Intent(getActivity(), DetailActivity.class);
+                Intent point = new Intent(getActivity(), FisheryDangjinActivity.class);
                 startActivity(point);
             }
         });
         point2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent point = new Intent(getActivity(), DetailActivity.class);
+                Intent point = new Intent(getActivity(), FisheryDonghaeActivity.class);
                 startActivity(point);
             }
         });

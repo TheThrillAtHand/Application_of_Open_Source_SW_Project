@@ -29,7 +29,7 @@
                 android:fontFamily="sans-serif-smallcaps"
                 android:gravity="center"
                 android:text="전국 날씨"
-                android:textColor="@color/colorAccent"
+                android:textColor="#F44336"
                 android:textSize="20sp" />
 
             <Spinner

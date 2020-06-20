@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 2018038019 최승혜
+    설 명 :  이벤트 xml-->
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,7 +27,7 @@
                 android:layout_width="302dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/malgun"
+                android:fontFamily="@font/bm_hanna"
                 android:text="이벤트"
                 android:textColor="@color/black"
                 android:textSize="35dp"

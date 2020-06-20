@@ -14,7 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
-import static com.example.TheThrillAtHand.Util.showToast;
+import static com.example.thethrillathand.Util.showToast;
 
 public class PasswordResetActivity extends BasicActivity {
     private FirebaseAuth mAuth;

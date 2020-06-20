@@ -1,7 +1,5 @@
 package com.example.thethrillathand;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
@@ -17,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -65,7 +65,7 @@ public class WeatherActivity extends AppCompatActivity {
         nowDateText = findViewById(R.id.nowDateText);
         icListView = findViewById(R.id.icListView);
 
-        arrayAdapter = new ArrayAdapter<>(this,R.layout.support_simple_spinner_dropdown_item,spinnerArray);
+        arrayAdapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item,spinnerArray);
         icSpinner.setAdapter(arrayAdapter);
 
         weatherAdapter = new ICWeatherAdapter(this);

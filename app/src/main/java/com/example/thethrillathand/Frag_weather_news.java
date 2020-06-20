@@ -22,7 +22,6 @@ public class Frag_weather_news extends Fragment {
 
     Frag_weather_news() {
 
-
     }
 
     @Override
@@ -47,9 +46,8 @@ public class Frag_weather_news extends Fragment {
             public void run() {    // 오래 거릴 작업을 구현한다
                 // TODO Auto-generated method stub
                 try{
-
                     final ImageView iv = (ImageView) getView().findViewById(R.id.Special_new);
-                    URL url = new URL("https://www.weather.go.kr/repositary/image/wrn/img/KTKO50_202006131100_108_36.png");
+                    URL url = new URL("https://www.weather.go.kr/repositary/image/wrn/img/KTKO50_202006201030_108_61.png");
                     InputStream is = url.openStream();
                     final Bitmap bm = BitmapFactory.decodeStream(is);
                     handler1.post(new Runnable() {
@@ -74,9 +72,8 @@ public class Frag_weather_news extends Fragment {
             public void run() {    // 오래 거릴 작업을 구현한다
                 // TODO Auto-generated method stub
                 try{
-
                     final ImageView iv2 = (ImageView) getView().findViewById(R.id.Special_new2);
-                    URL url2 = new URL("https://www.weather.go.kr/repositary/image/wrn/img/KTKO52_202006131600_108_9.png");
+                    URL url2 = new URL("https://www.weather.go.kr/repositary/image/wrn/img/KTKO50_202006201030_108_61b.png");
                     InputStream is2 = url2.openStream();
                     final Bitmap bm2 = BitmapFactory.decodeStream(is2);
                     handler2.post(new Runnable() {

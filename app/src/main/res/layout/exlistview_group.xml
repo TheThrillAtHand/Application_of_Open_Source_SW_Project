@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 2018038019 최승혜
+    설 명 :  expandable listview의 그룹 이름에 해당하는 textview xml-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -7,11 +9,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/exlist_group"
-        android:fontFamily="@font/malgun"
-        android:textSize="25dp"
+        android:fontFamily="@font/bm_hanna"
+        android:textSize="23dp"
         android:textColor="@color/black"
         android:padding="5dp"
-        android:textStyle="bold"
+
 
         />
 

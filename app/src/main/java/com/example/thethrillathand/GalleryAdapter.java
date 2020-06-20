@@ -18,7 +18,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import static com.example.TheThrillAtHand.Util.INTENT_PATH;
+import static com.example.thethrillathand.Util.INTENT_PATH;
 
 public class GalleryAdapter  extends RecyclerView.Adapter<GalleryAdapter.GalleryViewHolder> {
     private ArrayList<String> mDataset;

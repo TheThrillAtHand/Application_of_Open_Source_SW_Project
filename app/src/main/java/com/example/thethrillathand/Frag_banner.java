@@ -1,3 +1,11 @@
+/*
+    작성자 : 2018038019 최승혜
+    설 명 :  홈 화면의 슬라이드 배너의 메인 Frag
+
+*/
+
+
+
 package com.example.thethrillathand;
 
 import android.os.Bundle;
@@ -10,8 +18,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 public class Frag_banner extends Fragment {

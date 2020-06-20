@@ -33,8 +33,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-import static com.example.TheThrillAtHand.Util.INTENT_PATH;
-import static com.example.TheThrillAtHand.Util.showToast;
+import static com.example.thethrillathand.Util.INTENT_PATH;
+import static com.example.thethrillathand.Util.showToast;
 
 public class MemberInitActivity extends BasicActivity {
     private static final String TAG = "MemberInitActivity";

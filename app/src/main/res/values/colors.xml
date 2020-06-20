@@ -5,4 +5,9 @@
     <color name="colorAccent">#03DAC5</color>
     <color name ="white">#FFFFFF</color>
     <color name = "black">#212121</color>
+    <color name="rentalcolor">#33CCFF</color>
+    <color name="shipcolor">#0099FF</color>
+    <color name="fisherycolor">#C5E0B4</color>
+    <color name="colorgray">#DDDDDD</color>
+    <color name="lightgray">#F8F8F8</color>
 </resources>

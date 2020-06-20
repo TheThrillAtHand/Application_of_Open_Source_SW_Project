@@ -26,14 +26,14 @@
             <WebView
                 android:id="@+id/Windy"
                 android:layout_width="match_parent"
-                android:layout_height="382dp">
+                android:layout_height="700dp">
 
             </WebView>
 
             <WebView
                 android:id="@+id/SeaWeather"
                 android:layout_width="match_parent"
-                android:layout_height="571dp" />
+                android:layout_height="600dp" />
 
         </LinearLayout>
     </ScrollView>

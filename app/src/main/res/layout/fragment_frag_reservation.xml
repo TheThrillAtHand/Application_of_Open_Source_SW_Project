@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 2018038019 최승혜
+    설 명 : 메뉴 중 예약에 해당하는 xml-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -27,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#00ff0000"
-            android:fontFamily="@font/malgun"
+            android:fontFamily="@font/bm_hanna"
             android:gravity="center"
             android:paddingLeft="5dp"
             android:paddingTop="10dp"
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#00ff0000"
-                android:fontFamily="@font/malgun"
+                android:fontFamily="@font/bm_hanna"
                 android:gravity="center"
                 android:paddingLeft="5dp"
                 android:paddingTop="10dp"
@@ -89,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#00ff0000"
-                android:fontFamily="@font/malgun"
+                android:fontFamily="@font/bm_hanna"
                 android:gravity="center"
                 android:paddingLeft="5dp"
                 android:paddingTop="10dp"
