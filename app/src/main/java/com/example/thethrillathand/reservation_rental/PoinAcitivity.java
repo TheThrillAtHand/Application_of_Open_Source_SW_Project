@@ -1,3 +1,7 @@
+/*
+ 작성자 : 이선명
+ 르시엘 펜션 정보페이지(르시엘 펜션 상세보기 클릭시 현재 페이지로 이동)
+*/
 package com.example.thethrillathand.reservation_rental;
 
 import androidx.appcompat.app.AppCompatActivity;

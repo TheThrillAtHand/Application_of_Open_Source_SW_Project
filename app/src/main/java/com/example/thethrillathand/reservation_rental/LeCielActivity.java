@@ -1,3 +1,7 @@
+/*
+ 작성자 : 이선명
+ 르시엘 펜션 정보페이지(르시엘 펜션 상세보기 클릭시 현재 페이지로 이동)
+*/
 package com.example.thethrillathand.reservation_rental;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +12,9 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.thethrillathand.R;
+import com.example.thethrillathand.reservation_rental.LeCielGrandActivity;
+import com.example.thethrillathand.reservation_rental.LeCielVip1Activity;
+import com.example.thethrillathand.reservation_rental.LeCielVip2Activity;
 
 public class LeCielActivity extends AppCompatActivity {
 
