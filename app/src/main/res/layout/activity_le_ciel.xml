@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".reservation_rental.LeCielActivity"
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
 
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="58dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icon" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,6 +40,10 @@
             android:layout_width="match_parent"
             android:layout_height="69dp"
             android:gravity="center"
+
+            android:textColor="@color/black"
+            android:fontFamily="@font/bm_hanna"
+            android:textStyle="bold"
             android:text="여수 르시엘펜션\n"
             android:textSize="40sp" />
 
@@ -39,6 +59,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="그랜드룸"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp" />
 
         <TextView
@@ -63,6 +86,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ciel Vip-01"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp"/>
 
         <TextView
@@ -89,6 +115,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ciel Vip-02"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp" />
         <TextView
             android:layout_width="wrap_content"
@@ -106,6 +135,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\n숙소 소개"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp"/>
 
         <TextView
@@ -124,6 +156,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\n위치"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp" />
 
         <TextView
@@ -133,4 +168,5 @@
             android:textSize="13sp"/>
 
     </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

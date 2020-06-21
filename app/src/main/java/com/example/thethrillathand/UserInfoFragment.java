@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,16 +26,34 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class UserInfoFragment extends Fragment {
+
     private static final String TAG = "UserInfoFragment";
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+
+    private String mParam1;
+    private String mParam2;
 
     public UserInfoFragment() {
         // Required empty public constructor
     }
 
+    public static UserInfoFragment newInstance(String param1, String param2) {
+        UserInfoFragment fragment = new UserInfoFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
 
     }
 
@@ -43,11 +62,39 @@ public class UserInfoFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_user_info, container, false);
+        Button notice = (Button) view.findViewById(R.id.button_notice);
+        Button configuration = (Button) view.findViewById(R.id.button_configuration);
+        Button event = (Button) view.findViewById(R.id.button_event);
         final ImageView profileImageView = view.findViewById(R.id.profileImageView);
         final TextView nameTextView = view.findViewById(R.id.nameTextView);
         final TextView phoneNumberTextView = view.findViewById(R.id.phoneNumberTextView);
         final TextView birthDayTextView = view.findViewById(R.id.birthDayTextView);
         final TextView addressTextView = view.findViewById(R.id.addressTextView);
+
+
+
+
+        notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent noticeintent = new Intent(getActivity(), noticeActivity.class);
+                startActivity(noticeintent);
+            }
+        });
+        configuration.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent conintent = new Intent(getActivity(), configurationActivity.class);
+                startActivity(conintent);
+            }
+        });
+        event.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent eventintent = new Intent(getActivity(), eventActivity.class);
+                startActivity(eventintent);
+            }
+        });
 
 
 

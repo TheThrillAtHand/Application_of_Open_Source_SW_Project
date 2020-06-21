@@ -4,10 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import com.example.thethrillathand.reservation_fishery.Frag_reservation_fishery;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity"; // 추가
 
-//    private FragmentManager fragmentManager = getSupportFragmentManager();
+    private FragmentManager fragmentManager = getSupportFragmentManager();
 //
 //    private Frag_Home fragmentHome = new Frag_Home();
 //    private Frag_fishing fragmentFishing = new Frag_fishing();
@@ -61,8 +66,24 @@ public class MainActivity extends AppCompatActivity {
 
         init(); // 추가
 
-//        FragmentTransaction transaction = fragmentManager.beginTransaction();
-//        transaction.replace(R.id.main, fragmentHome).commitAllowingStateLoss();
+        ImageView mMenu = (ImageView) findViewById(R.id.mymenu);
+
+
+        mMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(),MyMenuActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+
+
+
+
     }
 
     private void init(){
@@ -139,7 +160,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-
         }
     }
 
@@ -147,8 +167,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, c);
         startActivityForResult(intent, 1);
     }
-
-
 
 
 

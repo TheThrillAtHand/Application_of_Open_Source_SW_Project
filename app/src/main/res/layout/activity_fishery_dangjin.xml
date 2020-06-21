@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".reservation_fishery.FisheryDangjinActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="58dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icon" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,6 +35,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="당진낚시터"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bm_hanna"
+            android:textStyle="bold"
             android:textSize="40sp"
             android:gravity="center"/>
         <TextView
@@ -42,6 +64,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  가격정보"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp" />
 
         <TextView
@@ -60,6 +85,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  위치"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp" />
 
         <TextView
@@ -78,6 +106,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  사장님한마디"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp" />
 
         <TextView
@@ -96,6 +127,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  주요어종"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp"/>
 
         <ImageView
@@ -113,11 +147,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  업체공지"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp"/>
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="87dp"
             android:text="\n  24시간 운영 / 배 운영시간 : 일출 ~ 일몰\n   식당운영 시간 : 09 ; 00 ~ 18 : 00 (석식 주문 16 : 00 까지)\n   낚시용품 판매 / 낚시대 대여불가 / 의자필수지참" />
 
         <TextView
@@ -130,6 +167,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\n  주변시설"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp" />
 
         <ImageView
@@ -157,5 +197,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

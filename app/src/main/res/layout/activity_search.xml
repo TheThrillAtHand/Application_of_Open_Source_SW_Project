@@ -54,7 +54,7 @@
         <ListView
             android:id="@+id/search_list"
             android:layout_width="match_parent"
-            android:layout_height="463dp"
+            android:layout_height="match_parent"
             android:layout_below="@id/editTextFilter"
             android:textFilterEnabled="true" />
 

@@ -8,19 +8,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="181dp"
-        android:layout_height="58dp"
-        android:padding="5dp"
-        app:srcCompat="@drawable/icon" />
-
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
-
-    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,12 +15,20 @@
         android:orientation="vertical"
         android:layout_below="@+id/imageView7">
 
+        <ImageView
+            android:id="@+id/imageview7"
+            android:layout_width="wrap_content"
+            android:layout_height="299dp"
+            app:srcCompat="@drawable/sample" />
+
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="54dp"
             android:gravity="center"
             android:text="회원가입"
+            android:fontFamily="@font/bm_hanna"
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -71,17 +66,29 @@
                 android:hint="비밀번호 확인"
                 android:inputType="textPassword" />
 
+
             <Button
                 android:id="@+id/signUpButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="회원가입" />
+                android:layout_margin="3dp"
+                android:background="@color/blue"
+                android:fontFamily="@font/malgun"
+                android:text="회원가입"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/gotoLoginButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="로그인" />
+                android:layout_margin="3dp"
+                android:background="@color/blue"
+                android:fontFamily="@font/malgun"
+                android:text="로그인"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
         </LinearLayout>
 
     </LinearLayout>

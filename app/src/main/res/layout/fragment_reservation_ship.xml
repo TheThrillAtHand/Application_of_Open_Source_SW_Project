@@ -37,7 +37,9 @@
                 android:text="안산 1호"
                 android:paddingLeft="10dp"
                 android:textSize="20dp"
-                android:textColor="#212121"
+                android:textColor="@color/black"
+                android:fontFamily="@font/malgun"
+                android:textStyle="bold"
 
                 />
 
@@ -100,7 +102,9 @@
                 android:text="조이호"
                 android:paddingLeft="10dp"
                 android:textSize="20dp"
-                android:textColor="#212121"
+                android:textColor="@color/black"
+                android:fontFamily="@font/malgun"
+                android:textStyle="bold"
 
                 />
 
@@ -158,7 +162,9 @@
                 android:text="신나라 1호"
                 android:paddingLeft="10dp"
                 android:textSize="20dp"
-                android:textColor="#212121"
+                android:textColor="@color/black"
+                android:fontFamily="@font/malgun"
+                android:textStyle="bold"
 
                 />
 

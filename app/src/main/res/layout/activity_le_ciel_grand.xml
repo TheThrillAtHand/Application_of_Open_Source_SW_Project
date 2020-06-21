@@ -1,10 +1,27 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".reservation_rental.LeCielGrandActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
 
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="58dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icon" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,6 +31,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="그랜드룸"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bm_hanna"
+            android:textStyle="bold"
             android:gravity="center"
             android:textSize="40sp"/>
         <TextView
@@ -40,6 +60,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  가격정보"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp" />
 
         <TextView
@@ -58,6 +81,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  기본정보"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp" />
         <TextView
             android:layout_width="match_parent"
@@ -78,6 +104,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  예약공지"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp"/>
         <TextView
             android:layout_width="match_parent"
@@ -103,6 +132,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  취소규정"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp" />
         <TextView
             android:layout_width="match_parent"
@@ -136,5 +168,5 @@
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

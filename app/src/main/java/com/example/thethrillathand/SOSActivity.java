@@ -66,7 +66,8 @@ public class SOSActivity extends AppCompatActivity {
                 String longitude_2 = String.format("%.2f ", longitude);
 
                 SmsManager sms = SmsManager.getDefault();
-                sms.sendTextMessage("01087508661", null, "긴급구조요청\n주소 "+ address + "위도 " + latitude_2 + "\n경도 "+ longitude_2, null, null);
+                // 신고 문자를 받을 타겟 번호 설정
+                sms.sendTextMessage("01000000000", null, "긴급구조요청\n주소 "+ address + "위도 " + latitude_2 + "\n경도 "+ longitude_2, null, null);
                 Toast.makeText(SOSActivity.this, "신고 접수 완료", Toast.LENGTH_LONG).show();
                 finish();
 

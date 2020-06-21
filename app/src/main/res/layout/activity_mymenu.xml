@@ -10,13 +10,13 @@
     android:background="#FFFFFF">
 
 
-        <ImageView
+    <ImageView
 
-            android:layout_width="181dp"
-            android:layout_height="58dp"
-            android:padding="5dp"
-            android:id="@+id/imageview8"
-            app:srcCompat="@drawable/icon" />
+        android:layout_width="181dp"
+        android:layout_height="58dp"
+        android:padding="5dp"
+        android:id="@+id/imageview8"
+        app:srcCompat="@drawable/icon" />
 
 
 
@@ -223,7 +223,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible">
-<!--        android:background="#91646464"-->
+        <!--        android:background="#91646464"-->
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

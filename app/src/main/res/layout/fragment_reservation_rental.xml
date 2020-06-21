@@ -33,7 +33,9 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
                 android:text="포인풀빌라"
-                android:textColor="#212121"
+                android:textColor="@color/black"
+                android:fontFamily="@font/malgun"
+                android:textStyle="bold"
                 android:textSize="20dp"
 
                 />
@@ -94,7 +96,9 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
                 android:text="르시엘펜션"
-                android:textColor="#212121"
+                android:textColor="@color/black"
+                android:fontFamily="@font/malgun"
+                android:textStyle="bold"
                 android:textSize="20dp"
 
                 />

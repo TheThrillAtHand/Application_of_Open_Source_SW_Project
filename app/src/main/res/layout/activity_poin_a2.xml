@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".reservation_rental.PoinA2Activity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
 
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="58dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icon" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Poin A2"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bm_hanna"
             android:textSize="40sp"
             android:gravity="center"/>
         <TextView
@@ -41,6 +60,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  가격정보"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp" />
 
         <TextView
@@ -59,6 +81,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  기본정보\n"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="15sp" />
         <TextView
             android:layout_width="match_parent"
@@ -83,6 +108,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  예약공지\n"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp"/>
 
         <TextView
@@ -109,6 +137,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\n  취소규정"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="17sp"/>
         <TextView
             android:layout_width="match_parent"
@@ -143,5 +174,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

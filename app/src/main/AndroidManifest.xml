@@ -31,7 +31,7 @@
         <activity android:name=".eventActivity" />
         <activity android:name=".SOSActivity" />
         <activity android:name=".SearchActivity" />
-
+        <activity android:name=".MyMenuActivity"/>
         <activity android:name=".fishsearch.SpotActivity"/>
         <activity android:name=".knot.uninote" android:theme="@style/Theme.mDialog"/>
         <activity android:name=".knot.clinch" android:theme="@style/Theme.mDialog"/>

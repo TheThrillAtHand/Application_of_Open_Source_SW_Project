@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".reservation_rental.PoinAcitivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
 
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="58dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icon" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,6 +41,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="가평 포인풀빌라펜션\n"
+
+            android:textColor="@color/black"
+            android:fontFamily="@font/bm_hanna"
+            android:textStyle="bold"
             android:textSize="40sp" />
 
 
@@ -38,6 +59,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Poin A1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp" />
 
         <TextView
@@ -57,12 +81,18 @@
             android:id="@+id/poin_a2"
             android:layout_width="wrap_content"
             android:layout_height="218dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:src="@drawable/poina2" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Poin A2"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp" />
 
         <TextView
@@ -89,6 +119,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Poin B1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp" />
 
         <TextView
@@ -115,6 +148,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Poin B2"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp" />
         <TextView
             android:layout_width="wrap_content"
@@ -132,6 +168,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\n숙소 소개"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
             android:textSize="20sp"/>
 
         <TextView
@@ -144,4 +183,5 @@
             android:textSize="11sp"/>
 
     </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</LinearLayout>
