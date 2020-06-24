@@ -4,9 +4,6 @@
 
 */
 
-
-
-
 package com.example.thethrillathand;
 
 import android.content.Intent;
@@ -38,8 +35,6 @@ public class MyMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mymenu);
 
-
-
         Button notice = (Button) findViewById(R.id.button_notice);
         Button configuration = (Button) findViewById(R.id.button_configuration);
         Button event = (Button) findViewById(R.id.button_event);
@@ -49,8 +44,6 @@ public class MyMenuActivity extends AppCompatActivity {
         final TextView phoneNumberTextView = findViewById(R.id.phoneNumberTextView);
         final TextView birthDayTextView = findViewById(R.id.birthDayTextView);
         final TextView addressTextView = findViewById(R.id.addressTextView);
-
-
 
         notice.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,8 +70,8 @@ public class MyMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
-                startActivity(intent);
+                Intent signupintent = new Intent(getApplicationContext(), SignUpActivity.class);
+                startActivity(signupintent);
 
 
 

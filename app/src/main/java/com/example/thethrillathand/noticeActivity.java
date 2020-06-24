@@ -4,9 +4,6 @@
             expandable listview를 이용하여 구현
 */
 
-
-
-
 package com.example.thethrillathand;
 
 import android.os.Bundle;
@@ -49,7 +46,7 @@ public class noticeActivity extends AppCompatActivity {
         DataList.add(temp);
         temp = new myGroup("초대 이벤트 당첨자 안내");
         temp.child.add("\n\n   ● 지난 초대 이벤트의 당첨자를 공지합니다!"+
-                "\n\n      ps***** 박*신"+
+                "\n\n      ps***** 박*진"+
                 "\n\n      ls**** 이*명" +
                 "\n\n   기간 내로 메일 회신 해주시길 바랍니다!\n");
         DataList.add(temp);
