@@ -1,3 +1,6 @@
+// 작성자 : 2016039020 정경창
+// 설  명 : Map(지도보기)를 구현한 클래스
+
 package com.example.thethrillathand;
 
 import android.os.Bundle;

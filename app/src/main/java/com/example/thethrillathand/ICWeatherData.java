@@ -1,3 +1,5 @@
+// 작성자 : 2016039020 정경창
+// 설  명 : 날씨정보 사용변수 클래스
 package com.example.thethrillathand;
 
 public class ICWeatherData {

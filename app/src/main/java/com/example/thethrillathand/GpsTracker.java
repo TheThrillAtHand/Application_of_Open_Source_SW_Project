@@ -1,3 +1,5 @@
+// 작성자 : 2016039020 정경창
+// 설  명 : GPS 정보 받아오는 클래스
 package com.example.thethrillathand;
 
 import android.Manifest;

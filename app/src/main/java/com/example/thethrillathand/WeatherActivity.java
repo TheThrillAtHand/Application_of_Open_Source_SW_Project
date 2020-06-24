@@ -1,3 +1,6 @@
+// 작성자 : 2016039020 정경창
+// 설  명 : 날씨정보를 Xml파일에서 받아와 출력하는 클래스
+
 package com.example.thethrillathand;
 
 import android.app.ProgressDialog;

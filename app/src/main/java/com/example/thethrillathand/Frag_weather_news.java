@@ -1,3 +1,6 @@
+// 작성자 : 2016039020 정경창
+// 설  명 : 해상 특보를 보여주는 클래스
+
 package com.example.thethrillathand;
 
 import android.graphics.Bitmap;

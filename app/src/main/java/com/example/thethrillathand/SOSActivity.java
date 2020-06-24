@@ -1,3 +1,5 @@
+// 작성자 : 2016039020 정경창
+// 설  명 : 위치 정보를 받아와 도로 주소로 변환하며 문자로 신고하는 클래스
 
 package com.example.thethrillathand;
 
