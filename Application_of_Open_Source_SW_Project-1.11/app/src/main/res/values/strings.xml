@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">TheThrillAtHand</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="request_permission">카메라 권한이 필요합니다.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="please_grant_permission">권한을 허용해 주세요.</string>
+    <string name="permission_1">[설정] > [권한] 에서 권한을 허용할 수 있습니다.</string>
+    <string name="permission_2">사진 및 파일을 저장하기 위하여 접근 권한이 필요합니다.</string>
+
+<!--    <string name="spinner">spinner</string>-->
+<!--    <string-array name = "spinner_do">-->
+<!--        <item>서울</item>-->
+<!--        <item>인천</item>-->
+<!--        <item>광주</item>-->
+<!--        <item>대구</item>-->
+<!--        <item>울산</item>-->
+<!--        <item>대전</item>-->
+<!--    </string-array>-->
+<!--    <string-array name = "spinner_do_seoul">-->
+<!--        <item>강남구</item>-->
+<!--        <item>강동구</item>-->
+<!--        <item>강북구</item>-->
+<!--        <item>강서구</item>-->
+<!--        <item>관악구</item>-->
+<!--    </string-array>-->
+<!--    <string-array name = "spinner_do_incheon">-->
+<!--        <item>강화군</item>-->
+<!--        <item>계양구</item>-->
+<!--        <item>남구</item>-->
+<!--        <item>남동구</item>-->
+<!--        <item>동구</item>-->
+<!--        <item>부평구</item>-->
+<!--    </string-array>-->
+</resources>
