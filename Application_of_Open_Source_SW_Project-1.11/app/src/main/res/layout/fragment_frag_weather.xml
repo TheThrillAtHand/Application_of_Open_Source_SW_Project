@@ -40,6 +40,27 @@
             android:background="#464646" />
 
         <Button
+            android:id="@+id/button_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00ff0000"
+            android:fontFamily="@font/bm_hanna"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="물때 정보"
+            android:textColor="#171515"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#464646" />
+
+        <Button
             android:id="@+id/button_local"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,27 +72,6 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="지역별 날씨"
-            android:textColor="#171515"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-        <View
-            android:layout_width="0.5dp"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:background="#464646" />
-
-        <Button
-            android:id="@+id/button_news"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="#00ff0000"
-            android:fontFamily="@font/bm_hanna"
-            android:paddingLeft="10dp"
-            android:paddingTop="10dp"
-            android:text="물때"
             android:textColor="#171515"
             android:textSize="18dp"
             android:textStyle="bold" />

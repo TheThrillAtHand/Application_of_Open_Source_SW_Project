@@ -79,19 +79,21 @@
                     android:src="@drawable/sunghwa" />
 
                 <TextView
+                    android:id="@+id/point1_Name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textColor="@color/black"
                     android:fontFamily="@font/malgun"
-                    android:text="당진 낚시터" />
+                    android:text="당진 낚시터"
+                    android:textColor="@color/black" />
 
                 <TextView
+                    android:id="@+id/point1_Area"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="충청남도 당진시"
                     android:fontFamily="@font/malgun"
+                    android:text="충청남도 당진시"
                     android:textSize="10dp" />
 
 
@@ -112,19 +114,21 @@
                     android:src="@drawable/daejin" />
 
                 <TextView
+                    android:id="@+id/point2_Name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/malgun"
-                    android:textColor="@color/black"
-                    android:text="동해 낚시터" />
+                    android:text="동해 낚시터"
+                    android:textColor="@color/black" />
 
                 <TextView
+                    android:id="@+id/point2_Area"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="강원도 동해시"
                     android:fontFamily="@font/malgun"
+                    android:text="강원도 동해시"
                     android:textSize="10dp" />
             </LinearLayout>
 

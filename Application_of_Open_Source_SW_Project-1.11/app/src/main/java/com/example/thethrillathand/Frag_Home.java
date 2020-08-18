@@ -8,24 +8,33 @@
 
 package com.example.thethrillathand;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
 import com.example.thethrillathand.fishsearch.SearchActivity;
 import com.example.thethrillathand.reservation_fishery.FisheryDangjinActivity;
 import com.example.thethrillathand.reservation_fishery.FisheryDonghaeActivity;
+import com.example.thethrillathand.reservation_fishery.FisheryGumiActivity;
+import com.example.thethrillathand.reservation_ship.ShipAnsanActivity;
+import com.example.thethrillathand.reservation_ship.ShipJoyActivity;
+import com.example.thethrillathand.reservation_ship.ShipSinnaraActivity;
+import com.google.android.exoplayer2.C;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.io.InputStream;
+import java.util.Random;
 
 
 /**
@@ -38,18 +47,6 @@ public class Frag_Home extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    // 전국의 날씨 정보 저장 주소 배열
-    String [] addressArray = {"http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4200000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4100000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4800000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4700000000",
-            "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2900000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2700000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=3000000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2600000000",
-            "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1100000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=3600000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=3100000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2800000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4600000000",
-            "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4500000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=5000000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=4400000000" , "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4300000000"};
-
-    // 하늘 정보만 얻는 배열
-    String [] [] arr;
-
-    // 입력 스트림, InputStream ( 날씨 누리에서 데이터를 받을 스트림 객체 )
-    InputStream inputStream;
-
 
 
     // TODO: Rename and change types of parameters
@@ -93,33 +90,52 @@ public class Frag_Home extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_frag__home,container,false);
 
+        final Class[] activity = new Class[]{FisheryDangjinActivity.class,FisheryDonghaeActivity.class, FisheryGumiActivity.class, ShipAnsanActivity.class, ShipSinnaraActivity.class, ShipJoyActivity.class};
+        String ClassName[] ={"당진 낚시터", "동해 낚시터", "구미 낚시터", "안산 1호","신나라 1호","조이호"};
+        String ClassDscript[] = {"충청남도 당진시","강원도 동해시", "경상북도 구미시","경기도 시흥시 정왕동", "충남 서천군 서면", "전라남도 여수시 신월5길"};
+        int[] ImageName = {R.drawable.dangjin,R.drawable.donghae,R.drawable.gumi,R.drawable.ansan,R.drawable.sinnara,R.drawable.joy};
+        Random r = new Random();
 
-
-        // 날씨 맑음 or 흐림 OR 비 X 지역 추천
-
-        // 지도에서 포인트 찍어 보여주기 또는 ㅇ그냥 장소만 알려주기
-
-
+        int Random_1 = r.nextInt(6);
+        int Random_2 = r.nextInt(6);
+        if (Random_1 == Random_2){
+            Random_2--;
+        }
+        final int Point_1 = Random_1;
+        final int Point_2 = Random_2;
 
         ImageView point1 = (ImageView) v.findViewById(R.id.point1);
+        point1.setImageResource(ImageName[Point_1]);
         ImageView point2 = (ImageView) v.findViewById(R.id.point2);
+        point2.setImageResource(ImageName[Point_2]);
+
         Button search = (Button) v.findViewById(R.id.button_search);
 
         getFragmentManager().beginTransaction().add(R.id.home_banner, new Frag_banner()).commit();
         getFragmentManager().beginTransaction().add(R.id.home_list, new Frag_exlistview()).commit();
 
+        TextView Point1_Name = (TextView) v.findViewById(R.id.point1_Name);
+        Point1_Name.setText(ClassName[Point_1]);
+        TextView Point1_Area = (TextView) v.findViewById(R.id.point1_Area);
+        Point1_Area.setText(ClassDscript[Point_1]);
+        TextView Point2_Name = (TextView) v.findViewById(R.id.point2_Name);
+        Point2_Name.setText(ClassName[Point_2]);
+        TextView Point2_Area = (TextView) v.findViewById(R.id.point2_Area);
+        Point2_Area.setText(ClassDscript[Point_2]);
+
+
         // 홈 오늘의 추천 Point
         point1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent point = new Intent(getActivity(), FisheryDangjinActivity.class);
+                Intent point = new Intent(getActivity(), activity[Point_1]);
                 startActivity(point);
             }
         });
         point2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent point = new Intent(getActivity(), FisheryDonghaeActivity.class);
+                Intent point = new Intent(getActivity(), activity[Point_2]);
                 startActivity(point);
             }
         });
