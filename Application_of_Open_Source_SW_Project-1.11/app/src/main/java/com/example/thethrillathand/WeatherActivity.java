@@ -7,6 +7,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +28,11 @@ import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.io.InputStream;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class WeatherActivity extends AppCompatActivity {
     // WeatherActivity 뷰
@@ -51,8 +57,11 @@ public class WeatherActivity extends AppCompatActivity {
     // Adapter class 객체.
     ICWeatherAdapter weatherAdapter;
 
-    // Spinner에서 보여질 이름의 배열
+    // Spinner에서 보여질 이름의 배열 (17)
     String [] spinnerArray = {"강원도","경기도","경상남도","경상북도","광주광역시","대구광역시","대전광역시","부산광역시","서울특별시","세종 특별자치시","울산광역시","인천광역시","전라남도","전라북도","제주특별자치도","충청남도","충청북도"};
+
+    // Today =
+    String [] [] arr;
 
     // 전국의 날씨 정보 저장 주소 배열
     String [] addressArray = {"http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4200000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4100000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4800000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4700000000",
@@ -146,7 +155,15 @@ public class WeatherActivity extends AppCompatActivity {
             icPop = convertView.findViewById(R.id.icPop);
 
             ICWeatherData weatherData = weatherDataArrayList.get(position);
-            icWeatherTime.setText(weatherData.date + "시");
+
+            Date currentTime = Calendar.getInstance().getTime();
+            SimpleDateFormat dayFormat = new SimpleDateFormat("dd",Locale.getDefault());
+            SimpleDateFormat monthFormat = new SimpleDateFormat("MM",Locale.getDefault());
+            String month = monthFormat.format(currentTime);
+            String day = dayFormat.format(currentTime);
+
+
+            icWeatherTime.setText(Integer.parseInt(day) + Integer.parseInt(weatherData.day) + "일 " + weatherData.date + "시");
             icTemp.setText("기온 : " + weatherData.temp + "도");
             icWfKor.setText("날씨 : " + weatherData.wfKor);
             icPop.setText("강수확률 : " + weatherData.pop + "%");
@@ -165,6 +182,7 @@ public class WeatherActivity extends AppCompatActivity {
             else{
                 icWeatherImg.setImageResource(R.drawable.cloud);
             }
+            Log.d("testcase", String.valueOf(weatherDataArrayList.size()));
 
             return convertView;
         }
@@ -249,6 +267,10 @@ public class WeatherActivity extends AppCompatActivity {
                         {
                             tempWeatherData.date = parser.getText();
                         }
+                        else if(tag.equals("day"))
+                        {
+                            tempWeatherData.day = parser.getText();
+                        }
                         else if(tag.equals("temp"))
                         {
                             tempWeatherData.temp = parser.getText();
@@ -282,4 +304,5 @@ public class WeatherActivity extends AppCompatActivity {
 
         return date;
     }
+
 }

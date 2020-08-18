@@ -22,6 +22,11 @@ import com.example.thethrillathand.fishsearch.SearchActivity;
 import com.example.thethrillathand.reservation_fishery.FisheryDangjinActivity;
 import com.example.thethrillathand.reservation_fishery.FisheryDonghaeActivity;
 
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.InputStream;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -33,6 +38,19 @@ public class Frag_Home extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    // 전국의 날씨 정보 저장 주소 배열
+    String [] addressArray = {"http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4200000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4100000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4800000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4700000000",
+            "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2900000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2700000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=3000000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2600000000",
+            "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1100000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=3600000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=3100000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2800000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4600000000",
+            "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4500000000","http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=5000000000","http://www.weather.go.kr/wid/queryDFSRSS.jsp?zone=4400000000" , "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4300000000"};
+
+    // 하늘 정보만 얻는 배열
+    String [] [] arr;
+
+    // 입력 스트림, InputStream ( 날씨 누리에서 데이터를 받을 스트림 객체 )
+    InputStream inputStream;
+
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -75,7 +93,7 @@ public class Frag_Home extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_frag__home,container,false);
 
-        // 지역의 날씨정보 받아오기
+
 
         // 날씨 맑음 or 흐림 OR 비 X 지역 추천
 
@@ -90,6 +108,7 @@ public class Frag_Home extends Fragment {
         getFragmentManager().beginTransaction().add(R.id.home_banner, new Frag_banner()).commit();
         getFragmentManager().beginTransaction().add(R.id.home_list, new Frag_exlistview()).commit();
 
+        // 홈 오늘의 추천 Point
         point1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
