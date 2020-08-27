@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:checkable="false"
+        android:checked="false"
+        android:enabled="true"
+        android:icon="@drawable/home2"
+        android:title="홈"
+        android:visible="true" />
+    <item
+        android:id="@+id/weather"
+        android:checkable="false"
+        android:checked="false"
+        android:enabled="true"
+        android:icon="@drawable/weather4"
+        android:title="날씨보기"
+        android:visible="true" />
+    <item
+        android:id="@+id/reservation"
+        android:checkable="false"
+        android:checked="false"
+        android:enabled="true"
+        android:icon="@drawable/cart1"
+        android:title="예약하기"
+        android:visible="true" />
+    <item
+        android:id="@+id/board"
+        android:checkable="false"
+        android:checked="false"
+        android:enabled="true"
+        android:icon="@drawable/pen3"
+        android:title="게시판"
+        android:visible="true" />
+    <item
+        android:id="@+id/sosMenu"
+        android:checkable="false"
+        android:checked="false"
+        android:enabled="true"
+        android:icon="@drawable/sos7"
+        android:title="SOS"
+        android:visible="true" />
+</menu>

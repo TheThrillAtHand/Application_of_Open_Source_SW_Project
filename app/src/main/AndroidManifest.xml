@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.thethrillathand">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sample4"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+
+
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".PoinActivity" />
+        <activity android:name=".noticeActivity" />
+        <activity android:name=".configurationActivity" />
+        <activity android:name=".eventActivity" />
+        <activity android:name=".SOSActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".MyMenuActivity"/>
+        <activity android:name=".fishsearch.SpotActivity"/>
+        <activity android:name=".knot.uninote" android:theme="@style/Theme.mDialog"/>
+        <activity android:name=".knot.clinch" android:theme="@style/Theme.mDialog"/>
+        <activity android:name=".knot.outside" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".knot.yarn" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".preparations.bass" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".preparations.hairtail" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".preparations.rockfish" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".preparations.sanddab" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name=".fishsearch.SearchActivity" />
+
+        <activity android:name=".reservation_fishery.FisheryDonghaeActivity"/>
+        <activity android:name=".reservation_fishery.FisheryDangjinActivity"/>
+        <activity android:name=".reservation_fishery.FisheryGumiActivity"/>
+        <activity android:name=".reservation_fishery.FisheryChungjuActivity"/>
+        <activity android:name=".reservation_fishery.FisheryGapyungActivity"/>
+
+        <activity android:name=".reservation_ship.ShipAnsanActivity"/>
+        <activity android:name=".reservation_ship.ShipJoyActivity"/>
+        <activity android:name=".reservation_ship.ShipSinnaraActivity"/>
+        <activity android:name=".reservation_ship.ShipBigstarActivity"/>
+        <activity android:name=".reservation_ship.ShipAceActivity"/>
+
+        <activity android:name=".reservation_rental.poin.PoinMainAcitivity" />
+        <activity android:name=".reservation_rental.poin.PoinA1Activity" />
+        <activity android:name=".reservation_rental.poin.PoinA2Activity" />
+        <activity android:name=".reservation_rental.poin.PoinB1Activity" />
+        <activity android:name=".reservation_rental.poin.PoinB2Activity" />
+        <activity android:name=".reservation_rental.leciel.LeCielMainActivity" />
+        <activity android:name=".reservation_rental.leciel.LeCielGrandActivity" />
+        <activity android:name=".reservation_rental.leciel.LeCielVip1Activity" />
+        <activity android:name=".reservation_rental.leciel.LeCielVip2Activity" />
+        <activity android:name=".reservation_rental.mongsan.Mongsan202Activity" />
+        <activity android:name=".reservation_rental.mongsan.Mongsan201Activity" />
+        <activity android:name=".reservation_rental.mongsan.Mongsan101Activity" />
+        <activity android:name=".reservation_rental.mongsan.MongsanMainActivity" />
+        <activity android:name=".reservation_rental.marinpia.Pia101Activity" />
+        <activity android:name=".reservation_rental.marinpia.Marin102Activity" />
+        <activity android:name=".reservation_rental.marinpia.Marin101Activity" />
+        <activity android:name=".reservation_rental.marinpia.Pia102Activity" />
+        <activity android:name=".reservation_rental.marinpia.MarinPiaMainActivity" />
+        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlampingCosmosActivity" />
+        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlamping3Activity" />
+        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlamping2Activity" />
+        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlamping1Activity" />
+        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlampingMainActivity" />
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".SignUpActivity">
+        </activity>
+        <activity android:name=".PasswordResetActivity">
+        </activity>
+        <activity android:name=".MemberInitActivity">
+        </activity>
+        <activity android:name=".CameraActivity">
+        </activity>
+        <activity android:name=".GalleryActivity">
+        </activity>
+        <activity android:name=".BasicActivity">
+        </activity>
+        <activity android:name=".WritePostActivity">
+        </activity>
+        <activity android:name=".PostActivity">
+        </activity>
+    </application>
+
+</manifest>
