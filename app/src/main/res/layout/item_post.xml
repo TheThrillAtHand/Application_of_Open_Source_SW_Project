@@ -58,12 +58,12 @@
             android:layout_marginBottom="5dp"
             android:background="#DDDDDD"/>
 
-        <com.example.thethrillathand.ReadContentsVIew
+        <com.nestnet.thethrillathand.ReadContentsVIew
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/readContentsView">
 
-        </com.example.thethrillathand.ReadContentsVIew>
+        </com.nestnet.thethrillathand.ReadContentsVIew>
 
     </LinearLayout>
 

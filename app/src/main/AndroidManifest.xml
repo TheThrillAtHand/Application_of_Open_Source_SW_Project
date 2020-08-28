@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.thethrillathand">
+    package="com.nestnet.thethrillathand">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -24,63 +24,63 @@
         tools:targetApi="m">
 
 
-        <activity android:name=".WeatherActivity" />
-        <activity android:name=".PoinActivity" />
-        <activity android:name=".noticeActivity" />
-        <activity android:name=".configurationActivity" />
-        <activity android:name=".eventActivity" />
-        <activity android:name=".SOSActivity" />
-        <activity android:name=".SearchActivity" />
-        <activity android:name=".MyMenuActivity"/>
-        <activity android:name=".fishsearch.SpotActivity"/>
-        <activity android:name=".knot.uninote" android:theme="@style/Theme.mDialog"/>
-        <activity android:name=".knot.clinch" android:theme="@style/Theme.mDialog"/>
-        <activity android:name=".knot.outside" android:theme = "@style/Theme.mDialog"/>
-        <activity android:name=".knot.yarn" android:theme = "@style/Theme.mDialog"/>
-        <activity android:name=".preparations.bass" android:theme = "@style/Theme.mDialog"/>
-        <activity android:name=".preparations.hairtail" android:theme = "@style/Theme.mDialog"/>
-        <activity android:name=".preparations.rockfish" android:theme = "@style/Theme.mDialog"/>
-        <activity android:name=".preparations.sanddab" android:theme = "@style/Theme.mDialog"/>
-        <activity android:name=".fishsearch.SearchActivity" />
+        <activity android:name="com.nestnet.thethrillathand.WeatherActivity" />
+        <activity android:name="com.nestnet.thethrillathand.PoinActivity" />
+        <activity android:name="com.nestnet.thethrillathand.noticeActivity" />
+        <activity android:name="com.nestnet.thethrillathand.configurationActivity" />
+        <activity android:name="com.nestnet.thethrillathand.eventActivity" />
+        <activity android:name="com.nestnet.thethrillathand.SOSActivity" />
+        <activity android:name="com.nestnet.thethrillathand.SearchActivity" />
+        <activity android:name="com.nestnet.thethrillathand.MyMenuActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.fishsearch.SpotActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.knot.uninote" android:theme="@style/Theme.mDialog"/>
+        <activity android:name="com.nestnet.thethrillathand.knot.clinch" android:theme="@style/Theme.mDialog"/>
+        <activity android:name="com.nestnet.thethrillathand.knot.outside" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name="com.nestnet.thethrillathand.knot.yarn" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name="com.nestnet.thethrillathand.preparations.bass" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name="com.nestnet.thethrillathand.preparations.hairtail" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name="com.nestnet.thethrillathand.preparations.rockfish" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name="com.nestnet.thethrillathand.preparations.sanddab" android:theme = "@style/Theme.mDialog"/>
+        <activity android:name="com.nestnet.thethrillathand.fishsearch.SearchActivity" />
 
-        <activity android:name=".reservation_fishery.FisheryDonghaeActivity"/>
-        <activity android:name=".reservation_fishery.FisheryDangjinActivity"/>
-        <activity android:name=".reservation_fishery.FisheryGumiActivity"/>
-        <activity android:name=".reservation_fishery.FisheryChungjuActivity"/>
-        <activity android:name=".reservation_fishery.FisheryGapyungActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_fishery.FisheryDonghaeActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_fishery.FisheryDangjinActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_fishery.FisheryGumiActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_fishery.FisheryChungjuActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_fishery.FisheryGapyungActivity"/>
 
-        <activity android:name=".reservation_ship.ShipAnsanActivity"/>
-        <activity android:name=".reservation_ship.ShipJoyActivity"/>
-        <activity android:name=".reservation_ship.ShipSinnaraActivity"/>
-        <activity android:name=".reservation_ship.ShipBigstarActivity"/>
-        <activity android:name=".reservation_ship.ShipAceActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_ship.ShipAnsanActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_ship.ShipJoyActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_ship.ShipSinnaraActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_ship.ShipBigstarActivity"/>
+        <activity android:name="com.nestnet.thethrillathand.reservation_ship.ShipAceActivity"/>
 
-        <activity android:name=".reservation_rental.poin.PoinMainAcitivity" />
-        <activity android:name=".reservation_rental.poin.PoinA1Activity" />
-        <activity android:name=".reservation_rental.poin.PoinA2Activity" />
-        <activity android:name=".reservation_rental.poin.PoinB1Activity" />
-        <activity android:name=".reservation_rental.poin.PoinB2Activity" />
-        <activity android:name=".reservation_rental.leciel.LeCielMainActivity" />
-        <activity android:name=".reservation_rental.leciel.LeCielGrandActivity" />
-        <activity android:name=".reservation_rental.leciel.LeCielVip1Activity" />
-        <activity android:name=".reservation_rental.leciel.LeCielVip2Activity" />
-        <activity android:name=".reservation_rental.mongsan.Mongsan202Activity" />
-        <activity android:name=".reservation_rental.mongsan.Mongsan201Activity" />
-        <activity android:name=".reservation_rental.mongsan.Mongsan101Activity" />
-        <activity android:name=".reservation_rental.mongsan.MongsanMainActivity" />
-        <activity android:name=".reservation_rental.marinpia.Pia101Activity" />
-        <activity android:name=".reservation_rental.marinpia.Marin102Activity" />
-        <activity android:name=".reservation_rental.marinpia.Marin101Activity" />
-        <activity android:name=".reservation_rental.marinpia.Pia102Activity" />
-        <activity android:name=".reservation_rental.marinpia.MarinPiaMainActivity" />
-        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlampingCosmosActivity" />
-        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlamping3Activity" />
-        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlamping2Activity" />
-        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlamping1Activity" />
-        <activity android:name=".reservation_rental.dangjin_glamping.DangjinGlampingMainActivity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.poin.PoinMainAcitivity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.poin.PoinA1Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.poin.PoinA2Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.poin.PoinB1Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.poin.PoinB2Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.leciel.LeCielMainActivity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.leciel.LeCielGrandActivity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.leciel.LeCielVip1Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.leciel.LeCielVip2Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.mongsan.Mongsan202Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.mongsan.Mongsan201Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.mongsan.Mongsan101Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.mongsan.MongsanMainActivity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.marinpia.Pia101Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.marinpia.Marin102Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.marinpia.Marin101Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.marinpia.Pia102Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.marinpia.MarinPiaMainActivity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.dangjin_glamping.DangjinGlampingCosmosActivity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.dangjin_glamping.DangjinGlamping3Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.dangjin_glamping.DangjinGlamping2Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.dangjin_glamping.DangjinGlamping1Activity" />
+        <activity android:name="com.nestnet.thethrillathand.reservation_rental.dangjin_glamping.DangjinGlampingMainActivity" />
 
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.nestnet.thethrillathand.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -88,23 +88,23 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.nestnet.thethrillathand.LoginActivity">
         </activity>
-        <activity android:name=".SignUpActivity">
+        <activity android:name="com.nestnet.thethrillathand.SignUpActivity">
         </activity>
-        <activity android:name=".PasswordResetActivity">
+        <activity android:name="com.nestnet.thethrillathand.PasswordResetActivity">
         </activity>
-        <activity android:name=".MemberInitActivity">
+        <activity android:name="com.nestnet.thethrillathand.MemberInitActivity">
         </activity>
-        <activity android:name=".CameraActivity">
+        <activity android:name="com.nestnet.thethrillathand.CameraActivity">
         </activity>
-        <activity android:name=".GalleryActivity">
+        <activity android:name="com.nestnet.thethrillathand.GalleryActivity">
         </activity>
-        <activity android:name=".BasicActivity">
+        <activity android:name="com.nestnet.thethrillathand.BasicActivity">
         </activity>
-        <activity android:name=".WritePostActivity">
+        <activity android:name="com.nestnet.thethrillathand.WritePostActivity">
         </activity>
-        <activity android:name=".PostActivity">
+        <activity android:name="com.nestnet.thethrillathand.PostActivity">
         </activity>
     </application>
 

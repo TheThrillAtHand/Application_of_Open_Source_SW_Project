@@ -33,12 +33,12 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <com.example.thethrillathand.ReadContentsVIew
+            <com.nestnet.thethrillathand.ReadContentsVIew
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/readContentsView">
 
-            </com.example.thethrillathand.ReadContentsVIew>
+            </com.nestnet.thethrillathand.ReadContentsVIew>
         </LinearLayout>
     </ScrollView>
 

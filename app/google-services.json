@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:302395961356:android:4c60209c3f0c8e74cc3e29",
         "android_client_info": {
-          "package_name": "com.example.TheThrillAtHand"
+          "package_name": "com.nestnet.TheThrillAtHand"
         }
       },
       "oauth_client": [
@@ -39,7 +39,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:302395961356:android:075248a4c23be40fcc3e29",
         "android_client_info": {
-          "package_name": "com.example.thethrillathand"
+          "package_name": "com.nestnet.thethrillathand"
         }
       },
       "oauth_client": [
