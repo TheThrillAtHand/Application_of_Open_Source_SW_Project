@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reservation_rental.LeCielActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="58dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icon" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:src="@drawable/cielmain" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:gravity="center"
+
+            android:textColor="@color/black"
+            android:fontFamily="@font/bm_hanna"
+            android:textStyle="bold"
+            android:text="여수 르시엘펜션\n"
+            android:textSize="40sp" />
+
+
+        <ImageButton
+            android:id="@+id/cilegrand"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/cielgrand" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그랜드룸"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기준 4명 / 최대 8명\n\n"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorgray"/>
+
+        <ImageButton
+            android:id="@+id/cilevip1"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:src="@drawable/cielvip1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciel Vip-01"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기준 2명 / 최대 6명\n\n"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorgray"/>
+
+        <ImageButton
+            android:id="@+id/cilevip2"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/cielvip2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciel Vip-02"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기준 2명 / 최대 6명\n"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n숙소 소개"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n고객님의 안전 및 건강을 최우선으로 생각하여 전 객실 매일 청소 및 소독을 실시하고 있습니다. 전 객실 손 세정제 비치 완료\n"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorgray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n위치"
+            android:textColor="@color/black"
+            android:fontFamily="@font/malgun"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전라남도 여수시 돌산읍 평사로 505-1"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
