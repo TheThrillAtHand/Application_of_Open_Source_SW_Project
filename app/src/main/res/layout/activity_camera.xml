@@ -42,6 +42,6 @@
         android:layout_height="match_parent"
         android:background="#000"
         android:layout_below="@+id/imageView7"
-        tools:context="com.example.TheThrillAtHand.activity.CameraActivity" />
+        tools:context="com.nestnet.TheThrillAtHand.activity.CameraActivity" />
 
 </RelativeLayout>

@@ -58,20 +58,25 @@ public class SOSActivity extends AppCompatActivity {
         yes_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                gpsTracker = new GpsTracker(SOSActivity.this);
-
-                double latitude = gpsTracker.getLatitude();
-                double longitude = gpsTracker.getLongitude();
-
-                String address = getCurrentAddress(latitude, longitude);
-                String latitude_2 = String.format("%.2f ", latitude);
-                String longitude_2 = String.format("%.2f ", longitude);
-
-                SmsManager sms = SmsManager.getDefault();
-                // 신고 문자를 받을 타겟 번호 설정
-                sms.sendTextMessage("01000000000", null, "긴급구조요청\n주소 "+ address + "위도 " + latitude_2 + "\n경도 "+ longitude_2, null, null);
-                Toast.makeText(SOSActivity.this, "신고 접수 완료", Toast.LENGTH_LONG).show();
+                // 기능 중단 안내 메시지
+                Toast.makeText(SOSActivity.this, "긴급신고 기능을 중지시켜 놓았습니다.", Toast.LENGTH_LONG).show();
                 finish();
+
+                // 현재 RECEIVE_SMS,SEND_SMS 퍼미션 삭제하고 앱 출시하며 작동 중지
+//                gpsTracker = new GpsTracker(SOSActivity.this);
+//
+//                double latitude = gpsTracker.getLatitude();
+//                double longitude = gpsTracker.getLongitude();
+//
+//                String address = getCurrentAddress(latitude, longitude);
+//                String latitude_2 = String.format("%.2f ", latitude);
+//                String longitude_2 = String.format("%.2f ", longitude);
+//
+//                SmsManager sms = SmsManager.getDefault();
+//                // 신고 문자를 받을 타겟 번호 설정
+//                sms.sendTextMessage("01000000000", null, "긴급구조요청\n주소 "+ address + "위도 " + latitude_2 + "\n경도 "+ longitude_2, null, null);
+//                Toast.makeText(SOSActivity.this, "신고 접수 완료", Toast.LENGTH_LONG).show();
+//                finish();
 
             }
 
