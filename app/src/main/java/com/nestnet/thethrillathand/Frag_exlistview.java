@@ -121,7 +121,7 @@ public class Frag_exlistview extends Fragment {
                     Intent intent = new Intent(getActivity(), sanddab.class);
                     startActivity(intent);
                 }
-                if(selected == "수산물 포획 금지 안내 사이트")
+                if(selected == "포획 금지 안내 사이트 바로가기")
                 {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.nifs.go.kr/lmo/scb/index2.lmo"));
                     startActivity(intent);
