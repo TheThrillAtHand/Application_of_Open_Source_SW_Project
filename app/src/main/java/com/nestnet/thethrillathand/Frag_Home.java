@@ -25,7 +25,9 @@ import com.nestnet.thethrillathand.reservation_fishery.FisheryDangjinActivity;
 import com.nestnet.thethrillathand.reservation_fishery.FisheryDonghaeActivity;
 import com.nestnet.thethrillathand.reservation_fishery.FisheryGapyungActivity;
 import com.nestnet.thethrillathand.reservation_fishery.FisheryGumiActivity;
+import com.nestnet.thethrillathand.reservation_ship.ShipAceActivity;
 import com.nestnet.thethrillathand.reservation_ship.ShipAnsanActivity;
+import com.nestnet.thethrillathand.reservation_ship.ShipBigstarActivity;
 import com.nestnet.thethrillathand.reservation_ship.ShipJoyActivity;
 import com.nestnet.thethrillathand.reservation_ship.ShipSinnaraActivity;
 
@@ -85,14 +87,14 @@ public class Frag_Home extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_frag__home,container,false);
 
-        final Class[] activity = new Class[]{FisheryDangjinActivity.class,FisheryDonghaeActivity.class,FisheryGumiActivity.class,FisheryChungjuActivity.class,FisheryGapyungActivity.class,ShipAnsanActivity.class, ShipJoyActivity.class, ShipSinnaraActivity.class};
+        final Class[] activity = new Class[]{FisheryDangjinActivity.class,FisheryDonghaeActivity.class,FisheryGumiActivity.class,FisheryChungjuActivity.class,FisheryGapyungActivity.class,ShipAnsanActivity.class, ShipJoyActivity.class, ShipSinnaraActivity.class, ShipBigstarActivity.class, ShipAceActivity.class};
         String ClassName[] ={"당진 낚시터","동해 낚시터","구미 낚시터","청주 낚시터","가평 낚시터","안산 1호","조이호","신나라 1호","빅스타호","에이스호"};
         String ClassDscript[] = {"충청남도 당진시","강원도 동해시","경상북도 구미시","충청북도 청주시","경기도 가평시","경기도 시흥시 정왕동","전라남도 여수시 신월5길","충남 서천군 서면","경기도 평택시","충남 보령시"};
         int[] ImageName = {R.drawable.dangjin,R.drawable.donghae,R.drawable.gumi,R.drawable.chungjufishery,R.drawable.gapyungfishery,R.drawable.ansan,R.drawable.joy,R.drawable.sinnara,R.drawable.bigstar,R.drawable.ace};
         Random r = new Random();
 
-        int Random_1 = r.nextInt(9);
-        int Random_2 = r.nextInt(9);
+        int Random_1 = r.nextInt(10);
+        int Random_2 = r.nextInt(10);
         if (Random_1 == Random_2){
             Random_2--;
         }
